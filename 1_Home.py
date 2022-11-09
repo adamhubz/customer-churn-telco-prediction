@@ -85,9 +85,9 @@ def predict():
         onehots = pd.get_dummies(train[cat], prefix=cat, drop_first = True)
         onehots.loc[0, :] = 0
         val = onehots.head(1)
-        if X_test[cat].values[0] in val.columns:
+        if (cat+'_'+X_test[cat].values[0]) in val.columns:
             val[cat+'_'+X_test[cat].values] = 1
-        X_test = X_test.join(onehots)
+        X_test = X_test.join(val)
 
     # drop kolom state, area_code
     X_test.drop(['state', 'area_code'], axis = 1, inplace = True)
