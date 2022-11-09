@@ -37,7 +37,8 @@ y = train['churn']
 scaler = StandardScaler()
 
 # Fit X and transform menjadi X_scaled
-X_scaled = scaler.fit_transform(X)
+scaler.fit(X)
+X_scaled = scaler.transform(X)
 
 # assign 21 into SEED for reproductivity
 SEED = 21
@@ -47,7 +48,8 @@ from sklearn.decomposition import PCA
 pca = PCA(n_components = 55, random_state = SEED)
 
 # Fit and transform the scaled training features using pca
-X_scaled_pca = pca.fit_transform(X_scaled)
+pca.fit(X_scaled)
+X_scaled_pca = pca.transform(X_scaled)
 
 # Balance Data
 # import library
