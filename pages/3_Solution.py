@@ -5,5 +5,5 @@ st.title('Solution')
 st.write("""
         Berdasarkan hasil analisis data pelanggan telco terdapat 2 solusi untuk mempertahankan pelanggan telco, yaitu:
         1. kita bisa memberikan perlakuan khusus (seperti menawarkan paket khusus) kepada pelanggan yang diprediksi akan menjadi churn oleh machine learning yang telah dibangun.
-        2. Meeningkatkan kualitas pelayanan yang diberikan kepada customer.
+        2. Meningkatkan kualitas pelayanan yang diberikan kepada customer.
 """)
