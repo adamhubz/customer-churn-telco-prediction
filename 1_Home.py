@@ -111,7 +111,7 @@ def predict():
 
     if prediction == 1:
         st.warning(f"""Selamat kamu mendapatkan penawaran khusus, ***HANYA UNTUK KAMU!***
-                    Kamu mendapatkan pesan ini karena kamu diprediksi akan meninggalkan layanan ini dengan peluang {prediction_prob[0, prediction] * 100}%""", icon="⚠️")
+                    Kamu mendapatkan pesan ini karena kamu diprediksi akan meninggalkan layanan ini dengan peluang {prediction_prob[1, prediction] * 100}%""", icon="⚠️")
     else:
         st.success(f'Kamu tidak diprediksi akan meninggalkan layanan ini dengan peluang {prediction_prob[0, prediction] * 100}%')
 
