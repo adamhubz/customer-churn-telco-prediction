@@ -7,7 +7,7 @@ from scipy.stats.mstats import winsorize
 st.set_page_config(page_title = 'Customer Churn Telco Prediction', page_icon=':iphone:', layout='wide')
 st.write("""
 # Customer Churn Telco Prediction
-Menggunakan machine learning untuk memprediksi apakah customer menjadi churn atau tidak.
+Applying machine learning to predict whether a customer is likely to churn.
 """)
 
 def user_input_features():
