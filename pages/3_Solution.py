@@ -11,7 +11,7 @@ with tab1:
                 2. Improve the quality of service provided to customers.
         """)
 
-with tab1:
+with tab2:
         st.write("""
                 Berdasarkan hasil analisis data pelanggan telco terdapat 2 solusi untuk mempertahankan pelanggan telco, yaitu:
                 1. kita bisa memberikan perlakuan khusus (seperti menawarkan paket khusus) kepada pelanggan yang diprediksi akan menjadi churn oleh machine learning yang telah dibangun.
