@@ -3,7 +3,7 @@ import streamlit as st
 st.set_page_config(page_title = 'Problem', page_icon=':iphone:', layout='wide')
 st.title('Problem')
 
-tab1, tab2 = st.tabs(["🇮🇩 Bahasa Indonesia", "🇬🇧 English"])
+tab1, tab2 = st.tabs(["eng English", "🇮🇩 Bahasa Indonesia"])
 
 with tab1:
   st.write("""The development of the telecommunications industry is very rapid, which can be seen from people's behavior in using the internet for communication.
